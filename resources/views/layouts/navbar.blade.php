@@ -6,7 +6,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto smooth-scroll">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
@@ -36,7 +36,7 @@
                 </ul>
             </li> -->
             <li class="nav-item">
-                <a class="nav-link" href="">Our Team</a>
+                <a class="nav-link" href="/#team">Our Team</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="">Contact Us</a>
