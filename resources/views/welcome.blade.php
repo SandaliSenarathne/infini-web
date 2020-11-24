@@ -17,8 +17,33 @@
 
         html {
             scroll-behavior: smooth;
+            max-width:100vw;
         }
     </style>
+
+    <script >
+        // Regular map
+        function regular_map() {
+            var var_location = new google.maps.LatLng(40.725118, -73.997699);
+
+            var var_mapoptions = {
+                center: var_location,
+                zoom: 14
+            };
+
+            var var_map = new google.maps.Map(document.getElementById("map-container"),
+                var_mapoptions);
+
+            var var_marker = new google.maps.Marker({
+                position: var_location,
+                map: var_map,
+                title: "New York"
+            });
+        }
+
+        // Initialize maps
+        google.maps.event.addDomListener(window, 'load', regular_map);
+    </script>
 
 </head>
 <body>
@@ -318,6 +343,77 @@
         <!--
         ==================================================
         Our Team Section End
+        ================================================== -->
+
+
+        <!--
+        ==================================================
+        Contact Us Section Start
+        ================================================== -->
+        <section id="contact" class="pt-5 pb-5 special-color-dark white-text">
+            
+            <div class="container">
+                
+                <!-- Heading -->
+                <h2 class="mb-5 mt-5 font-weight-bold text-center white-text">Contact us</h2>
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="pt-5 col-lg-7 col-md-12">
+                        <p><i class="fa fa-map fa-1x mr-2 white-text"></i>No.02,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Lane,
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Road,
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thisawewa,
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anuradhapura.</p>
+                        <p><i class="fa fa-building fa-1x mr-2 white-text"></i> Mon - Fri, 8:00-22:00</p>
+                        <p><i class="fa fa-phone fa-1x mr-2 white-text"></i> + 94 71 559 1137
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ 94 71 927 4111</p>
+                        <p><i class="fa fa-envelope fa-1x mr-2 white-text"></i> adminmail@infini.com</p>
+
+                        <!-- Google map
+                        <div id="map-container" class="z-depth-1-half map-container mb-5" style="height: 300px"></div> -->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-md-12">
+                        <!-- Form contact -->
+                        <form class="grey-text">
+                            <div class="md-form form-sm"> <i class="fa fa-user prefix white-text"></i>
+                                <input type="text" id="form3" class="form-control form-control-sm">
+                                <label class="white-text" for="form3">Your name</label>
+                            </div>
+                            <div class="md-form form-sm"> <i class="fa fa-envelope prefix white-text"></i>
+                                <input type="text" id="form2" class="form-control form-control-sm">
+                                <label class="white-text" for="form2">Your email address</label>
+                            </div>
+                            <div class="md-form form-sm"> <i class="fa fa-tag prefix white-text"></i>
+                                <input type="text" id="form32" class="form-control form-control-sm">
+                                <label class="white-text" for="form34">Subject</label>
+                            </div>
+                            <div class="md-form form-sm"> <i class="fa fa-pencil prefix white-text"></i>
+                                <textarea type="text" id="form8" class="md-textarea form-control form-control-sm" rows="2"></textarea>
+                                <label class="white-text" for="form8">Your message</label>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button class="btn white black-text">Send <i class="fa fa-paper-plane ml-1 black-text"></i></button>
+                            </div>
+                        </form>
+                        <!-- Form contact -->
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </div>
+
+        </section>
+        <!--
+        ==================================================
+        Contact Us Section End
         ================================================== -->
 
     </main>
